@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #241919, #350101); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#MantaText{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Bebas Neue, sans-serif;
+}
+
+
+#manta{
+    color: white;
+}
+
+
+#one{
+    color: red;
+}
+
+
+#loginform{
+    background-color: rgba(0, 0, 0, 0.45);
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    padding: 50px;
+    border-radius: 18px;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+
+input{
+    width: 220px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+
+#loginbtn{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#loginbtn:hover{
+    background-color: rgb(190, 0, 0);
+}
