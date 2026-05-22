@@ -30,6 +30,11 @@
     --shadow-color:rgba(0,0,0,0.5);
     --overlay-dark:rgba(0,0,0,0.7);
 
+
+    --subtext:
+        'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+
     /* MY GRADIENTS */
     --main-gradient:
     linear-gradient(
@@ -37,7 +42,7 @@
         rgba(0,0,0,0.9),
         rgba(0,0,0,0.2)
     );
-}
+    }
 
 body{
     background: var(--bkg-card);
@@ -54,7 +59,7 @@ body{
 
 
     #one{
-        color: var(--red-light);
+        color: var(--red-normal);
         font-family: 'Montserrat', sans-serif;
 
     }
@@ -161,35 +166,148 @@ body{
 
 #skew{
     margin-bottom:40px;
-}
-
-#skew-images{
-    position: relative;
-    height: 450px;
-    overflow:hidden;
-    border-radius: 25px;
-}
-
-#skew-images img{
-    width: 100%;
+    position:relative;
+    overflow: hidden;
     height: 100%;
-    object-fit:cover;
-    transform: skewY(-3deg) scale(1.1);
-    opacity: 0.8;
+}
+
+.skew-images{
+    display: flex;
+    position: relative;
+    position: relative;
+    overflow:hidden;
+    
+}
+
+.skew-images img{
+    width:250px;
+    height: 100%;
+    object-fit: cover;
+    transform: skewX(-12deg);
+    margin-left: -40px;
+    opacity: 0.7;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-main);
+    position: relative;
+    z-index: 10;
+    width: 500px;
+    
+    
+
+}
+
+
+#well p{
+    font-size: 1.0em;
+    color: var(--red-light);
+    margin-bottom: 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif ;
+
+}
+
+
+#well h1{
+    font-size: 3.0rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif ;
+    display: flex;
+
+
 }
 
 
 
+#skew::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.1)
+    );
+    z-index: 2;
+}
+
+#head{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    z-index: 20;
+    color: white;
+}
+
+#text h1{
+    font-size: 6rem;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif ;
+
+}
+
+#desc{
+    max-width: 500px;
+    line-height: 1.5;
+    font-family: var(--subtext) ;
+    font-weight: 100;
+}
+
+
+.manta{
+        color: var(--text-main);
+        font-family: var(--subtext);
+    }
 
 
 
+    .one{
+        color: var(--red-normal);
+        font-family: var(--subtext);
+
+    }
+
+.movie-row{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    color: var(--text-main);
+
+}
 
 
+.movie-row::-webkit-scrollbar{
+    display: none;
+}
 
+.movie-card{
+flex: 0 0 auto;
+}
 
+.movie-card:hover{
+    transform: scale(1.00);
+}
 
+.movie-row img{
+    width:150px;
+    height:220px;
+    object-fit: cover;
+    border-radius: 12px;
+    display:block;
+}
 
-
-
-
+.movie-card h3{
+    text-align:center;
+    font-family: var(--subtext);
+}
 
