@@ -277,11 +277,12 @@ body{
     display: flex;
     flex-direction: row;
     gap: 15px;
-    overflow-x: auto;
+    overflow-x:auto;
     overflow-y: auto;
-    scroll-behavior: smooth;
+    
     padding: 10px;
     color: var(--text-main);
+    
 
 }
 
@@ -290,24 +291,64 @@ body{
     display: none;
 }
 
+.movie-link{
+    text-decoration: none;
+
+}
+
+
+
 .movie-card{
 flex: 0 0 auto;
+cursor: pointer;
+transition: 0.3s;
+
 }
 
 .movie-card:hover{
-    transform: scale(1.00);
+    transform: scale(1.05);
+    
 }
 
 .movie-row img{
     width:150px;
     height:220px;
-    object-fit: cover;
     border-radius: 12px;
     display:block;
 }
 
-.movie-card h3{
+.movie-row img:hover{
+    filter: brightness(1.05);
+    box-shadow: 0px 4px 8px var(--text-secondary);
+}
+
+#mov{
+    font-family: var(--subtext);
+    color: var(--text-main);
+
+}
+
+
+
+.movie-card p{
     text-align:center;
     font-family: var(--subtext);
 }
 
+
+
+#topbuttons button{
+    border-radius: 20px;
+    color: var(--text-muted);
+    background: var(--red-normal);
+    cursor:pointer;
+    transition: 0.3s ease;
+    border: none;
+    font-size: large;
+    margin: auto;
+}
+
+
+#topbuttons button:hover{
+    transform: scale(1.2);
+}
