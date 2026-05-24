@@ -333,6 +333,8 @@ transition: 0.3s;
 .movie-card p{
     text-align:center;
     font-family: var(--subtext);
+    text-decoration: none;
+    color:var(--text-main);
 }
 
 
