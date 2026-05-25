@@ -14,7 +14,7 @@ async function fetchMovie(){
 
 
 
-    // DISPLAY MOVIE INFO
+    // MOVIE INFO N STUFF
     document.getElementById("movie").innerHTML = `
         <img 
             src="https://image.tmdb.org/t/p/original${movie.backdrop_path}"
@@ -25,7 +25,7 @@ async function fetchMovie(){
         <p>${movie.overview}</p>
 
         <a 
-            href="https://www.justwatch.com/us/movie/interstellar"
+            href="https://streamex.sh/watch/movie/157336?server=streamex"
             target="_blank"
         >
             <button>
@@ -33,7 +33,7 @@ async function fetchMovie(){
             </button>
         </a>
 
-    ;`
+    `;
 
 }
 

@@ -6,27 +6,26 @@
 
 :root{
 
-    /* MAIN BACKGROUNDS */
     --bkg-main:#0B0B0B;
     --bkg-secondary:#151515;
     --bkg-card:#1C1C1C;
 
-    /* PRIMARY MANTA COLORS */
+    
     --red-normal:#A00016;
     --red-light:#e42c38;
     --deep-red:#6D000F;
 
-    /* TEXT COLORS */
+
     --text-main:#F5F5F5;
     --text-secondary:#B3B3B3;
     --text-muted:#7A7A7A;
 
-    /* MAIN ELEMENTS OF THE USER INTERFACE */
+    
     --border-color:#2A2A2A;
     --hover-color:#242424;
     --input-bg:#1A1A1A;
 
-    /* SHADOWS AND STUFF */
+    
     --shadow-color:rgba(0,0,0,0.5);
     --overlay-dark:rgba(0,0,0,0.7);
 
@@ -35,7 +34,7 @@
         'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     
 
-    /* MY GRADIENTS */
+    
     --main-gradient:
     linear-gradient(
         to right,
@@ -340,17 +339,18 @@ transition: 0.3s;
 
 
 #topbuttons button{
-    border-radius: 20px;
-    color: var(--text-muted);
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
     background: var(--red-normal);
+    color:white;
     cursor:pointer;
-    transition: 0.3s ease;
-    border: none;
-    font-size: large;
-    margin: auto;
+    margin-top:20px;
 }
 
 
 #topbuttons button:hover{
     transform: scale(1.2);
 }
+
+
